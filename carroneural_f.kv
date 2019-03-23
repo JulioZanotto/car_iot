@@ -1,0 +1,50 @@
+<CustomButton@Button>:
+	font_size: 32
+
+<CarNeural>:
+	lbl: IA
+	lbl2: temperatura
+	lbl3: velocidade
+	lbl4: rotacao
+	lbl5: distancia
+	lbl6: ambiente
+	lbl7: oleo
+	rows : 2
+	padding: 10
+	spacing: 10
+
+	BoxLayout:
+		spacing: 10
+
+		Label:
+			id: velocidade
+
+		Label:
+			id: rotacao
+
+		Label:
+			id: distancia
+
+	BoxLayout:
+		spacing: 10
+		Label:
+			id: temperatura
+
+		Label:
+			id: ambiente
+
+		Label:
+			id: IA
+
+		BoxLayout:
+			spacing: 10
+			orientation: 'vertical'
+
+			Button:
+				size: 10,10
+				text: "Oil Change"
+				on_press: root.btn_status()
+
+			Label:
+				id: oleo
+
